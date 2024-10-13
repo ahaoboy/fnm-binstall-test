@@ -1,6 +1,6 @@
 [package]
 name = "fnm-binstall-test"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 repository = "https://github.com/ahaoboy/fnm-binstall-test"
 license = "MIT"
@@ -10,19 +10,19 @@ authors = ["ahaoboy"]
 
 [dependencies]
 
-
 [[bin]]
 name = "fnm"
 
 [package.metadata.binstall]
 pkg-fmt = "zip"
+bin-dir = "fnm{ binary-ext }"
 
 [package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
-pkg-url = "{ repo }/releases/download/v{ version }/fnm-windows"
+pkg-url = "{ repo }/releases/download/v{ version }/fnm-windows.zip"
 
 [package.metadata.binstall.overrides.x86_64-apple-darwin]
-pkg-url = "{ repo }/releases/download/v{ version }/fnm-macos"
+pkg-url = "{ repo }/releases/download/v{ version }/fnm-macos.zip"
 
 
 [package.metadata.binstall.overrides.x86_64-unknown-linux-musl]
-pkg-url = "{ repo }/releases/download/v{ version }/fnm-linux"
+pkg-url = "{ repo }/releases/download/v{ version }/fnm-linux.zip"
