@@ -39,5 +39,6 @@ jobs:
         with:
           bin: fnm
           zip: all
+          tar: none
           target: ${{ matrix.target }}
           token: ${{ secrets.GITHUB_TOKEN }}
