@@ -1,0 +1,15 @@
+[package]
+name = "fnm-binstall-test"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/ahaoboy/fnm-binstall-test"
+license = "MIT"
+description = "fnm-binstall-test"
+homepage = "https://github.com/ahaoboy/fnm-binstall-test"
+authors = ["ahaoboy"]
+
+[dependencies]
+
+
+[[bin]]
+name = "fnm"
