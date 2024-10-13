@@ -13,3 +13,17 @@ authors = ["ahaoboy"]
 
 [[bin]]
 name = "fnm"
+
+
+[package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
+pkg-fmt = "zip"
+pkg-url = "{ repo }/releases/download/v{ version }/{ name }-windows"
+
+[package.metadata.binstall.overrides.x86_64-apple-darwin]
+pkg-fmt = "zip"
+pkg-url = "{ repo }/releases/download/v{ version }/{ name }-macos"
+
+
+[package.metadata.binstall.overrides.x86_64-unknown-linux-musl]
+pkg-fmt = "zip"
+pkg-url = "{ repo }/releases/download/v{ version }/{ name }-linux"
